@@ -18,8 +18,8 @@ this.api = createApiClient(baseUrl);
  async update(id, data) {
  }
  async delete(id) {
- }
- }
- return (await this.api.put(`/${id}`, data)).data;
+    return (await this.api.put(`/${id}`, data)).data;
  return (await this.api.delete(`/${id}`)).data;
+ }
+ }
  export default new ContactService();
